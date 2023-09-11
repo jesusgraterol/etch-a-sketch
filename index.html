@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Charset -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Etch-A-Sketch</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./app.css">
+
+    <!-- Script -->
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <!-- App Outer Container -->
+    <div id="app_outer_container">
+        
+
+        <!-- App Inner Container -->
+        <div id="app_inner_container">
+            
+            <!-- App Container -->
+            <div id="app_container">
+
+                <!--- Configuration Menu -->
+                <div id="configuration_menu">
+                    <h1>Etch-a-Sketch</h1>
+
+                    <!-- Modes -->
+                    <button class="btn" id="color_mode_button">Color Mode</button>
+                    <button class="btn" id="rainbow_mode_button">Rainbow Mode</button>
+                    <button class="btn" id="eraser_mode_button">Eraser</button>
+
+                    <!-- Clearer -->
+                    <button class="btn" id="clear_button">Clear</button>
+
+                    <!-- Pad Size -->
+                    <div id="slider_container">
+                        <p id="sketch_pad_size_text"><!-- Filled by App Class --></p>
+                        <input 
+                            id="sketch_pad_size" 
+                            class="slider" 
+                            type="range" 
+                            min="8" 
+                            max="100" 
+                            value="16">
+                    </div>
+                    
+                </div>
+
+                <!-- Sketch Pad -->
+                <div id="sketch_pad_container"><!-- Filled by App Class --></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,277 @@
+/********************
+ * GLOBAL VARIABLES *
+ ********************/
+:root {
+    --primary-color: #312e2e;
+}
+
+
+/*************
+ * SANITIZER *
+ *************/
+ *, *::before, *::after { box-sizing: border-box; border: none; background-repeat: no-repeat; }
+ html { font-family: Verdana, Geneva, Tahoma, sans-serif; word-break: break-word; color: #312e2e}
+ body { margin: 0; padding:0; background-color: #fafafa;width: 100%;height:100% }
+
+
+
+
+
+
+
+
+ /**********
+  * BUTTON *
+  **********/
+.btn {
+    background-color: inherit;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:17px;
+    border-radius: 7px;
+    width: 100%;
+}
+.btn.active {
+    background-color: var(--primary-color);
+    color:white;
+}
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.02) perspective(1px);
+}
+
+
+
+
+
+
+
+
+/**********
+ * SLIDER *
+ **********/
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+ /******************
+  * APP CONTAINERS *
+  ******************/
+
+
+/* Outer Container */
+#app_outer_container {
+    padding:30px;
+}
+
+
+
+/* Inner Container */
+#app_inner_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Container */
+#app_container {
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+
+
+
+/**********************
+ * CONFIGURATION MENU *
+ **********************/
+
+#app_inner_container #configuration_menu {
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0.3;
+}
+#app_inner_container #configuration_menu h1 { 
+    margin:0 0 30px 0;
+    text-align: center;
+}
+
+
+/* Menu Buttons */
+#app_inner_container #configuration_menu button {
+    margin: 15px 0 15px 0;
+}
+#app_inner_container #configuration_menu button:first-child {
+    margin: 0 0 15px 0;
+}
+#app_inner_container #configuration_menu button:last-child {
+    margin: 15px 0 0 0;
+}
+
+
+/* Menu Slider */
+#app_inner_container #configuration_menu #slider_container {
+    width: 100%;
+}
+#app_inner_container #configuration_menu #slider_container p {
+    font-size: 17px;
+    text-align: center;
+}
+
+
+
+
+/************************
+ * SKETCH PAD CONTAINER *
+ ************************/
+
+#app_inner_container #app_container #sketch_pad_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 650px;
+    flex: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#app_inner_container #app_container #sketch_pad_container .row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+#app_inner_container #app_container #sketch_pad_container .row .col {
+    background-color: white;
+    flex:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /****************************
+ * RESPONSIVE MEDIA QUERIES *
+ ****************************/
+
+
+/*
+ * DEVICE: Desktops
+ * SCREEN: 1281px to higher resolution desktops
+ */
+@media (min-width: 1281px) {
+
+
+
+}
+
+
+/*
+ * DEVICE: Laptops, Desktops
+ * SCREEN: B/w 1025px to 1280px
+ */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+
+}
+
+
+/*
+ * DEVICE: Tablets, Ipads (portrait)
+ * SCREEN: B/w 768px to 1024px
+ */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+}
+
+
+/*
+ * DEVICE: Tablets, Ipads (landscape)
+ * SCREEN: B/w 768px to 1024px
+ */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+
+}
+
+
+/*
+ * DEVICE: Low Resolution Tablets, Mobiles (Landscape)
+ * SCREEN: B/w 481px to 767px
+ */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    
+
+}
+
+
+/*
+ * DEVICE: Most of the Smartphones Mobiles (Portrait)
+ * SCREEN: 480px to lower resolution mobiles
+ */
+@media (max-width: 480px) {
+
+
+
+}
