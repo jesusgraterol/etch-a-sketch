@@ -216,7 +216,10 @@
  * SCREEN: 1281px to higher resolution desktops
  */
 @media (min-width: 1281px) {
-
+    /* Container */
+    #app_container {
+        max-width: 85%;
+    }
 
 
 }
@@ -227,7 +230,10 @@
  * SCREEN: B/w 1025px to 1280px
  */
 @media (min-width: 1025px) and (max-width: 1280px) {
-
+    /* Container */
+    #app_container {
+        max-width: 85%;
+    }
 
 
 }
@@ -238,7 +244,10 @@
  * SCREEN: B/w 768px to 1024px
  */
 @media (min-width: 768px) and (max-width: 1024px) {
-
+    /* Container */
+    #app_container {
+        max-width: 100%;
+    }
 
 
 }
@@ -249,7 +258,16 @@
  * SCREEN: B/w 768px to 1024px
  */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Outer Container */
+    #app_outer_container {
+        padding:15px;
+    }
 
+
+    /* Container */
+    #app_container {
+        max-width: 100%;
+    }
 
 
 }
@@ -260,7 +278,17 @@
  * SCREEN: B/w 481px to 767px
  */
 @media (min-width: 481px) and (max-width: 767px) {
+    /* Outer Container */
+    #app_outer_container {
+        padding:15px;
+    }
 
+
+    /* Container */
+    #app_container {
+        max-width: 100%;
+        flex-direction: column;
+    }
     
 
 }
@@ -271,6 +299,18 @@
  * SCREEN: 480px to lower resolution mobiles
  */
 @media (max-width: 480px) {
+    /* Outer Container */
+    #app_outer_container {
+        padding:15px;
+    }
+
+
+    /* Container */
+    #app_container {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
 
 
 
