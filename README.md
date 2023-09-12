@@ -5,3 +5,7 @@ program with Vanilla CSS & JavaScript with some minor variations. For more infor
 project, please visit:
 
 [https://www.theodinproject.com/lessons/foundations-etch-a-sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
+
+A live demo of this solution can be accessed here:
+
+[https://jesusgraterol.github.io/etch_a_sketch/](https://jesusgraterol.github.io/etch_a_sketch/)
