@@ -7,7 +7,7 @@ This application allows the user to draw anything on a canvas with the mouse and
 - Color & Rainbow Mode
 - Erase / Clear Functionality
 - Customizable Canvas
-- Cross-Browser Compatibility
+- Cross-Platform Compatibility
 
 
 ## Live Demo
@@ -55,7 +55,7 @@ N/A
 
 ## @TODO
 
-- Allow the user to set a custom color
+- Allow the user to set a custom color in "Color Mode"
 
 ## License
 
